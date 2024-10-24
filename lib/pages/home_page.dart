@@ -168,7 +168,7 @@ class _HomePageViewState extends State<HomePageView> {
                           itemBuilder: (context, index) {
                             return GestureDetector(
                                 onTap: () => Get.to(() => ProductDetails(
-                                      obj: Datas.newBikes,
+                                      obj: Datas.newBikes[index],
                                     )),
                                 child: VerticalTileItem(
                                     obj: Datas.newBikes[index]));
